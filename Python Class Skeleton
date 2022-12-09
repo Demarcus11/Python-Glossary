@@ -1,0 +1,14 @@
+class MyClass:
+    def my_method(self, arg1, arge2):
+        result = arg1 + arge2
+        return result
+
+
+#  Create an instance of the class
+my_instance = MyClass()
+
+#  Call the method on the instance
+result = my_instance.my_method(1, 2)
+
+#  Print the result
+print(result)
