@@ -1,0 +1,34 @@
+#  Python for loop has a range() function that takes 3 parameters: for i in range(start index(inclusive), stop index(exclusive, so wont include this value), step size(increment))
+
+
+# Example of a for loop that loops through nums array printing every number 
+nums [1, 2, 3, 4, 5]
+for i in range(len(nums)):
+    print(nums[i])
+ Output = 1, 2, 3, 4, 5
+  
+  
+ # Example of a for loop that starts at index 1 and takes the running sum of nums array
+ nums = [1, 2, 3, 4]
+ for i in range(1, len(nums)):
+     nums[i] += nums[i - 1]
+ Output = [1, 3, 6, 10]
+  
+  
+ # Example of a for loop that increments by 2
+ for i in range(0, 10, 2):
+     print(i)
+ Output = 0, 2, 4, 6, 8
+ 
+ 
+ # Example of a for loop loop that increments backwards in increments of 2
+ for i in range(10, 0, -2):
+     print(i)
+  Output = 10, 8, 6, 4, 2
+   
+   
+# Example of a for each loop that loops through nums array printing every number
+nums = [1, 2, 3, 4, 5]
+for number in nums:
+    print(number)
+Output = 1, 2, 3, 4, 5
