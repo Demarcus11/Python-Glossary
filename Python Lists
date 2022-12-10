@@ -1,0 +1,54 @@
+# Create a empty List
+  my_list = []
+  
+# Create a List of 10 integers
+  my_list = [0] * 10
+  
+# Create a List with strings already initilized
+  my_list = ["red", "blue", "purple"]
+ 
+# Add to a List using append()
+  my_list.append("apple")
+  my_list.append("banana")
+  my_list.append("cherry")
+ 
+ 
+# Add to a List using insert()
+  my_list.insert(0, "orange")
+  Output = ["orange", "red", "blue", "purple"]
+  
+# Add to a List using extend()
+  my_list.extend(["orange", "pear", "mango"])
+  Output = ["red", "blue", "purple", "orange", "pear", "mango"]
+  *This adds mutiple elements at once
+  
+  
+  
+# Delete from a List using 'del'
+  # create a list with some initial elements
+  my_list = ["apple", "banana", "cherry", "orange", "pear", "mango"]
+
+  # delete the second element from the list
+  del my_list[1]
+
+  # print the updated list
+  print(my_list)
+  
+# Delete from a List using remove()
+  my_list.remove("cherry")
+  
+  
+# Delete from a List using pop()
+  my_list.pop(2)
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
