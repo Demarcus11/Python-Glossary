@@ -1,0 +1,117 @@
+# initialize a dictionary with the dict() function
+  my_dict = dict(key1="value1", key2="value2", key3="value3")
+
+  # print the dictionary
+  print(my_dict)
+
+
+# initialize a dictionary with the curly braces notation {}
+  my_dict = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+  # print the dictionary
+  print(my_dict)
+
+
+# initialize an empty dictionary
+    my_dict = {}
+
+    # add key-value pairs to the dictionary
+    my_dict["key1"] = "value1"
+    my_dict["key2"] = "value2"
+    my_dict["key3"] = "value3"
+
+
+# Update dictionary using [] notation
+  my_dict = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+  # update the values in the dictionary
+  my_dict["key1"] = "new value1"
+  my_dict["key2"] = "new value2"
+
+  # print the updated dictionary
+  print(my_dict)
+
+
+# Update dictionary using update()
+  my_dict = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+  # define a dictionary with new values to update the original dictionary
+  new_values = {"key1": "new value1", "key2": "new value2"}
+
+  # update the values in the original dictionary with the new values
+  my_dict.update(new_values)
+
+  # print the updated dictionary
+  print(my_dict)
+  
+  
+  
+# Delete element from dictionary
+  my_dict = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+  # delete an element from the dictionary
+  del my_dict["key2"]
+
+  # print the updated dictionary
+  print(my_dict)
+
+
+# Search for key in dictionary
+  # define a dictionary with some initial key-value pairs
+  my_dict = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+  # search for a key in the dictionary
+  if "key1" in my_dict:
+      print("key1 found in dictionary")
+  else:
+      print("key1 not found in dictionary")
+      
+   In this code, the my_dict variable is defined with the dictionary containing some initial key-value pairs. Then, the in keyword is used with the square brackets notation to check if the key "key4" is present in the dictionary. However, since the key "key4" does not exist in the dictionary, a KeyError exception is raised, and the code will not be able to execute the if-else statement.
+
+   To avoid the KeyError exception, you can use the get() method to search for a key in a dictionary. The get() method takes the key to search for as an argument, and returns the value associated with the key if the key is found in the dictionary. If the key is not found, the get() method returns None by default. For example:
+  # define a dictionary with some initial key-value pairs
+  my_dict = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+  # search for a key in the dictionary using the get() method
+  key = "key4"
+  value = my_dict.get(key)
+  if value is not None:
+      print("{} found in dictionary with value {}".format(key, value))
+  else:
+      print("{} not found in dictionary".format(key))
+      
+      
+# Search for value in dictionary
+  # define a dictionary with some initial key-value pairs
+  my_dict = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+  # search for a value in the dictionary
+  value = "value2"
+  found = False
+  for v in my_dict.values():
+      if v == value:
+          found = True
+          break
+
+  if found:
+      print("value found in dictionary")
+  else:
+  
+  *Note you can also use 'in' keyword to search for a value but its not reccomended because its inefficent 
+      print("value not found in dictionary")
+      
+      
+ 
+ # Printing 
+  for k, v in my_dict.items():
+    print("key:", k, "value:", v)
+    
+   # Print only keys
+    for k in my_dict.keys():
+      print("key:", k)
+      
+   # Print only values
+    for v in my_dict.values():
+      print("value:", v)
+
+ 
