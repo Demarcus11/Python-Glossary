@@ -1,0 +1,45 @@
+# Create a empty Set
+  my_set = set()
+  
+# Create a Set with initial values
+  # create a set with some initial elements
+  my_set = set(["apple", "banana", "cherry"])
+
+  # print the set
+  print(my_set)
+  
+# Update a Set using update()
+  # create an empty set
+  my_set = set()
+
+  # add some elements to the set
+  my_set.update(["apple", "banana", "cherry"])
+
+  # print the set
+  print(my_set)
+  
+  
+# Delete from a Set using remove()
+  # create a set with some initial elements
+  my_set = set(["apple", "banana", "cherry"])
+
+  # remove the element "banana" from the set
+  my_set.remove("banana")
+
+  # print the updated set
+  print(my_set)
+  
+  *Note: if the element youre removing isnt in the Set it produces an Error
+  
+  
+# Delete from a Set using discard()
+  # create a set with some initial elements
+  my_set = set(["apple", "banana", "cherry"])
+
+  # discard the element "orange" from the set
+  my_set.discard("orange")
+
+  # print the updated set
+  print(my_set)
+  
+  *Note: this method doesnt produce an Error if the element isnt in the Set (recommended)
