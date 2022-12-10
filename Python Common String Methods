@@ -1,0 +1,75 @@
+# str.upper(): Converts all the characters in the string to uppercase.
+# str.lower(): Converts all the characters in the string to lowercase.
+# str.strip(): Removes leading and trailing whitespace characters from the string.
+# str.split(): Splits the string into a list of substrings based on a specified separator.
+# str.replace(): Replaces all occurrences of a specified substring in the string with another substring.
+# str.format(): Formats the string by substituting placeholders with specified values.
+# str.startswith(): Returns True if the string starts with a specified substring, and False otherwise.
+# str.endswith(): Returns True if the string ends with a specified substring, and False otherwise.
+# str.isdigit(): Returns True if the string contains only numeric characters, and False otherwise.
+# str.isalpha(): Returns True if the string contains only alphabetic characters, and False otherwise.
+
+# Example using str.upper() and lower() work the same
+# define a string
+my_string = "hello world!"
+
+# convert the string to uppercase
+my_string_upper = my_string.upper()
+
+# print the original and uppercase strings
+print("Original:", my_string)
+print("Uppercase:", my_string_upper)
+Output= Original: hello world!
+        Uppercase: HELLO WORLD!
+
+
+
+# Example using str.strip()
+# define a string with leading and trailing whitespace
+my_string = "   hello world!   "
+
+# remove leading and trailing whitespace
+my_string_stripped = my_string.strip()
+
+# print the original and stripped strings
+print("Original:", my_string)
+print("Stripped:", my_string_stripped)
+Output = Original:    hello world!  
+         Stripped: hello world!
+
+
+
+# Example str.replace()
+# define a string
+my_string = "hello world!"
+
+# replace a substring in the string
+my_string_replaced = my_string.replace("world", "universe")
+
+# print the original and replaced strings
+print("Original:", my_string)
+print("Replaced:", my_string_replaced)
+Output = Original: hello world!
+         Replaced: hello universe!
+         
+         
+         
+# Example using str.format()
+# define a string with placeholders
+my_string = "Hello {}, welcome to {}!"
+
+# specify the values to substitute for the placeholders
+name = "Alice"
+location = "Wonderland"
+
+# format the string with the specified values
+my_string_formatted = my_string.format(name, location)
+
+# print the original and formatted strings
+print("Original:", my_string)
+print("Formatted:", my_string_formatted)
+Output = Original: Hello {}, welcome to {}!
+         Formatted: Hello Alice, welcome to Wonderland!
+
+
+
